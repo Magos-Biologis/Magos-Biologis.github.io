@@ -31,3 +31,61 @@
 ::selection {
   background-color: rgba(71, 88, 171, 0.18);
 }
+
+/* Collapsible notation primer: a plain toggle that reads as a subordinate line
+   under the section heading (no callout box). */
+details.nomenclature-primer {
+  margin-bottom: 1.25rem;
+}
+details.nomenclature-primer > summary {
+  cursor: pointer;
+  list-style: none;          /* drop the default disclosure triangle */
+  font-style: italic;
+  color: #6c757d;
+}
+details.nomenclature-primer > summary::-webkit-details-marker {
+  display: none;             /* same, for WebKit */
+}
+details.nomenclature-primer[open] > summary {
+  margin-bottom: 0.85rem;    /* breathing room before the body when expanded */
+}
+details.nomenclature-primer > summary::before {
+  content: "\25B8";          /* ▸ caret, rotates to ▾ when open */
+  display: inline-block;
+  margin-right: 0.4rem;
+  transition: transform 0.15s ease;
+}
+details.nomenclature-primer[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+/* Theorem-like environments (definitions, propositions, corollaries, examples)
+   stand out as a tinted box with a colour-coded accent bar. Only the mode-agnostic
+   STRUCTURE lives here; the colours live in light-lux.scss / dark-lux.scss so they
+   switch together with the rest of the theme (a body-class scope flipped early). */
+.theorem {
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-radius: 4px;
+  padding: 0.75rem 1rem 0.4rem;
+  margin: 1.25rem 0;
+}
+
+/* Remarks are commentary: lighter — no fill, just a subtle bar. */
+.proof.remark {
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 1rem;
+  margin: 1.25rem 0;
+}
+
+/* Pre-rendered TikZ diagrams are black line-art on a transparent background.
+   Sit them on a white card so they stay legible in dark mode too, and let
+   them scale down on narrow screens. */
+img.diagram {
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+}
