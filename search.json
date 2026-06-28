@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Awesome Blog",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Mathematician specializing in the modeling of complex systems — dynamical systems, stochastic processes, and numerical analysis, with applications in the biosciences and bioinformatics."
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "CV",
+    "section": "Education",
+    "text": "Education\n\n\nDegree, Field — Institution, Year"
+  },
+  {
+    "objectID": "cv.html#research-experience",
+    "href": "cv.html#research-experience",
+    "title": "CV",
+    "section": "Research experience",
+    "text": "Research experience\n\nPosition — Group / Institution, Year–Year\n\nBrief description of focus, methods, and outcomes."
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "CV",
+    "section": "Publications",
+    "text": "Publications\n\n\nComing soon."
+  },
+  {
+    "objectID": "cv.html#talks-posters",
+    "href": "cv.html#talks-posters",
+    "title": "CV",
+    "section": "Talks & posters",
+    "text": "Talks & posters\n\nComing soon."
+  },
+  {
+    "objectID": "cv.html#technical-skills",
+    "href": "cv.html#technical-skills",
+    "title": "CV",
+    "section": "Technical skills",
+    "text": "Technical skills\n\nLanguages: Julia, Python, R\nMethods: dynamical systems, stochastic processes, numerical analysis, simulation, data analysis\nTools:"
+  },
+  {
+    "objectID": "cv.html#projects",
+    "href": "cv.html#projects",
+    "title": "CV",
+    "section": "Projects",
+    "text": "Projects\n\n\nProject name — one-line summary. Repo · Write-up"
+  },
+  {
+    "objectID": "cv.html#teaching",
+    "href": "cv.html#teaching",
+    "title": "CV",
+    "section": "Teaching",
+    "text": "Teaching\n\nComing soon."
+  },
+  {
+    "objectID": "cv.html#awards-grants",
+    "href": "cv.html#awards-grants",
+    "title": "CV",
+    "section": "Awards & grants",
+    "text": "Awards & grants\n\nComing soon."
+  },
+  {
+    "objectID": "cv.html#service",
+    "href": "cv.html#service",
+    "title": "CV",
+    "section": "Service",
+    "text": "Service\n\n\nComing soon."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a mathematician specializing in the modeling of complex systems. My expertise lies in dynamical systems, stochastic processes, and numerical analysis, with applications in the biosciences and bioinformatics.\nWith proficiency in Julia, Python, and R, I develop and implement analytical and numerical solutions to challenging problems.\nI’m particularly fascinated by genetics and the application of mathematical theory to biological emergence — an interest that grows out of a long-standing passion for genetics and its relationship to developmental biology."
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "About",
+    "section": "Research interests",
+    "text": "Research interests\n\n\nDynamical systems\nStochastic processes\nNumerical analysis\nBioscience & bioinformatics applications\nGenetics and developmental biology"
+  },
+  {
+    "objectID": "about.html#skills-tools",
+    "href": "about.html#skills-tools",
+    "title": "About",
+    "section": "Skills & tools",
+    "text": "Skills & tools\n\nLanguages: Julia, Python, R\nAreas: mathematical modeling, simulation, data analysis"
+  },
+  {
+    "objectID": "about.html#elsewhere",
+    "href": "about.html#elsewhere",
+    "title": "About",
+    "section": "Elsewhere",
+    "text": "Elsewhere\n\n\nGitHub"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact"
+  }
+]

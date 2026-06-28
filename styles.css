@@ -1,0 +1,33 @@
+/* Custom site styles — add your overrides here. */
+
+/* Swap Quarto's default toggle-slider for sun/moon glyphs (Bootstrap Icons font).
+   Which glyph shows is keyed on the toggle's state class:
+     :not(.alternate) = light mode -> sun
+     .alternate       = dark mode  -> moon
+   The navbar is always dark (data-bs-theme="dark"), so the icon is light in
+   both modes, brightening to white on hover. */
+.navbar .quarto-color-scheme-toggle .bi::before {
+  background-image: none !important;
+  font-family: "bootstrap-icons" !important;
+  width: auto !important;
+  height: auto !important;
+  font-size: 1rem;
+  line-height: 1;
+  vertical-align: -0.125em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar .quarto-color-scheme-toggle:hover .bi::before {
+  color: #fff;
+}
+.navbar .quarto-color-scheme-toggle:not(.alternate) .bi::before {
+  content: "\f5a1" !important;  /* sun-fill — light mode */
+}
+.navbar .quarto-color-scheme-toggle.alternate .bi::before {
+  content: "\f495" !important;  /* moon-stars-fill — dark mode */
+}
+
+/* Subtle text-selection highlight (light mode; dark mode overrides this in
+   dark-lux.scss). */
+::selection {
+  background-color: rgba(71, 88, 171, 0.18);
+}
