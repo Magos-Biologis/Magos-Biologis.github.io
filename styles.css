@@ -79,13 +79,21 @@ details.nomenclature-primer[open] > summary::before {
   margin: 1.25rem 0;
 }
 
-/* Pre-rendered TikZ diagrams are black line-art on a transparent background.
-   Sit them on a white card so they stay legible in dark mode too, and let
-   them scale down on narrow screens. */
+/* Inline TikZ diagrams: black line-art with white-filled nodes on a transparent
+   background. Centred here because the extension emits a bare <img> (fig-align
+   only applies when a diagram has a caption). */
 img.diagram {
-  background-color: #fff;
-  padding: 0.75rem 1rem;
-  border-radius: 4px;
+  display: block;
+  margin-inline: auto;
   max-width: 100%;
   height: auto;
+}
+/* Dark mode: invert(0.9), NOT invert(1). The CSS invert formula maps
+   white -> (1-amount)*255 and black -> amount*255, so 0.9 sends the white node
+   fills to ~#191919 — matching the #1a1a1a page background so the node boxes
+   disappear — and the black lines/text to ~#e5e5e5 (light, legible). A full
+   invert(1) would make the fills pure #000, showing as boxes on #1a1a1a.
+   (Safe because the diagrams are monochrome; revisit for a coloured diagram.) */
+.quarto-dark img.diagram {
+  filter: invert(0.9);
 }
